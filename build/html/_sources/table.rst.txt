@@ -1,0 +1,11 @@
+.. list-table:: 
+   :widths: 20 20   
+   :header-rows: 1
+   :align: center
+
+   * - Name
+     - Age
+   {% for key, value in names.iterrows() %}
+   * - {{ value[0]}} {{value[1]}}
+     - {{ value[2]}}
+    {% endfor %}
